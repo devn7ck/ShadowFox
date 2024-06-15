@@ -1,8 +1,12 @@
 # ShadowFox
 ## Tasks during my ShadowFox🦊 Web Development👨‍💻 Internship period⌛
 
-### Task 1
+### Task Level (Beginner)
+#### Make a portfolio website
 
-### Task 2
+### Task Level (Intermediate)
+#### E-commerce website enhancement
 
-### Task 3
+### Task Level (Hard)
+#### Full-stack development client project
+Roadmap: https://roadmap.sh/full-stack
