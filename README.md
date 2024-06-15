@@ -1,2 +1,2 @@
 # ShadowFox
-Repository containing tasks during my ShadowFox Web Development Internship period
+#### Tasks during my ShadowFox Web Development Internship period
