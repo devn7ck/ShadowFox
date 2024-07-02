@@ -1,0 +1,465 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior:smooth;
+	overflow-x: hidden;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ease{
+	transition: all ease-in-out 0.35s;
+}
+.flex{
+	display: inline-flex;
+}
+
+:root{
+	--first-color : #1A2421; 	
+	--second-color:  #4D8C57; 	
+	--third-color: #f2f2f2; 	
+	--fourth-color: #F5F5F5; 		
+
+	--shadowColor: rgba(0, 0, 0, 0.067);
+    --textShadow: 0px 6px 11px var(--shadowColor);
+    --borderLineColor: rgb(189, 189, 189);
+    --navTrasparency: 0.64;
+    --transition: all ease 0.5s;
+}
+
+body{
+	width:100vw;
+	min-width: 100%;
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+	color: unset;
+}
+
+li{
+	list-style: none;
+}
+
+h2, h3, svg, p, span{
+	color: var(--first-color);
+}
+h2, h3, h4, p, span, .logo, .copyright{
+	cursor: default;
+}
+
+
+/*#######################################NAVBAR STYLESHEET#########################################*/
+nav{
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: -webkit-fill-available;
+	min-width: 100%;
+	height: auto;
+	padding: 28px 0;
+	background: var(--fourth-color);
+	box-shadow: 0 6px 5px 1px rgb(0,0,0,0.155);
+	z-index: 3;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;	
+}
+
+.logo{
+	float: left;
+	margin-left:8%;
+	display: inline-flex;
+	color: var(--first-color);
+	font-size: 18px;
+	font-weight:bolder;
+	letter-spacing: 1.4px;
+	font: "";
+	transition: all 0.3s ease-in;
+	cursor: pointer;
+}
+.logo a{
+	display: inline-flex;
+}
+.logo a img{
+	height: 50px;
+	padding-right: 10px;
+}
+.logo a img, .logo a span{
+	margin: auto;
+}
+
+.menu{ 	
+	float: right;
+	margin: auto;
+	margin-right:8%;
+}
+
+.menu-list{
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+.menu-list li{
+	display: inherit;
+	color: var(--first-color);
+	font: "";
+	font-size: 15.75px;
+	margin: auto 40px;
+}
+.menu-list li a svg{
+	color: rgb(227,227,200);
+}
+.menu-list li:last-child{
+	margin-right: 0;
+}
+.menu-list li a{
+	transition: all 0.35s ease;
+}
+.menu-list li a:hover{
+	color: var(--second-color);
+	cursor: pointer;
+	transition: all 0.35s ease;
+}
+.menu input{
+	padding: 7px;
+}
+#menuBtn, .dropdown-menu{
+	display: none;
+}
+
+@media screen and (max-width:57.07rem){
+    .menu-list.A{
+        display:none;  
+    }
+    #menuBtn{
+		display: block;
+        cursor: pointer;
+    }
+	#menuBtn div{
+		margin: 5px;
+		height: 4px;
+		width: 34px;
+		border-radius: 5px;
+		background: var(--first-color);
+	}
+    .dropdown-menu{
+        position: absolute;
+		right: 0;
+        width: 246px/*100vw*/;
+		height: 30rem;
+        justify-content: center;
+        align-content: center;
+        background: rgba(255, 255, 255, 0.83);
+        transform: translateY(37px)/*translate(-129.3px, 43.4px)*/;
+        border-radius:0 0 3px 3px;
+        box-shadow: 0 6px 5px 1px rgb(0,0,0,0.45);
+		z-index: 5;
+    }
+    .display_JS{
+        display: flex;
+    }
+    .dropdown-menu ul{
+        margin: auto;
+		display: grid;
+    }
+    .dropdown-menu ul li{   
+		margin: auto;
+        text-align: center;
+    }
+    .dropdown-menu ul li a{
+        display: flex;
+		font-size: 20px;
+		width: 200px;
+        justify-content:stretch;
+		justify-self: center;
+        margin-bottom: 15px;
+        padding: 10px 27px; 
+		overflow:hidden;     
+    }
+	.dropdown-menu ul li a .bi{
+		width: 23px;
+		height: 23px;
+		margin-right: 12px;
+    }
+    .dropdown-menu ul li a:hover{
+        background: rgb(1, 2, 1, 0.84);
+        color: #ffffff;
+        border-radius: 3px;
+    }
+    .dropdown-menu ul li a:active{
+        background: #201802;
+    }
+	.menu input{
+		top: 0;
+		margin: 10px auto;
+	}
+}
+
+
+
+/****************************  HEADER  *******************************/
+
+header{
+	width: inherit;
+	background-color: '';
+	background-image: url(https://www.arngren.net/Cutout_2.gif);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 6rem;
+	margin-left: 8rem;
+}
+
+.header{
+	height: auto;
+	width: 100%;
+	background: #1a2421f3;
+	color: var(--fourth-color);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+
+}
+
+.header-text{
+	align-content: center;
+	text-align: center;
+	text-align: center;
+	padding: auto;
+	margin: 0 28px;
+	min-height: 25rem;
+	font-size: 37px;
+	color: var(--fourth-color);
+	text-shadow: 0 7px 19px rgb(0,0,0, 0.2);
+}
+.header-text>h1{
+	margin-bottom: 40px;
+	font-size: 84px;
+	cursor: default;
+}
+.header-text p{
+	color: var(--fourth-color);
+}
+
+@media screen and (max-width: 27rem){
+	.header-text>h1{
+		font-size: 58px;
+	}
+}
+
+
+
+/************************   SIDEBAR CONTAINER   ****/
+aside{
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: auto;
+	min-width: 12.6rem;
+	text-align: center;
+	overflow-y: scroll;
+	z-index: 2;
+	background-color: white;
+	align-content: center;
+}
+aside::-webkit-scrollbar{
+    background: var(--second-color);
+    width: 4px;
+}
+aside::-webkit-scrollbar-thumb{
+    background: linear-gradient(var(--second-color),var(--first-color));
+    border-radius: 17px;
+}
+aside>div{
+	margin: 7.3rem 0 1rem;
+}
+
+.item-list li{
+	background: var(--fourth-color);
+	transition: all ease-in-out 0.175s;
+	border-radius: 2px;
+	padding: 8px 0;
+	margin: 4px;
+	cursor: pointer;
+}
+.item-list li a{
+	display: block;
+	padding: inherit;
+}
+
+
+.item-list li:hover{
+	background-color: var(--second-color);
+	color: var(--fourth-color);
+}
+
+/************************   PRODUCT CONTAINER   ****/
+
+main>div{
+	margin-left: 12.65rem;
+	margin-top: 2.75rem;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1px;
+    padding: 1px;
+}
+
+#product-name{
+    color: var(--contactfooterColor);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
+}
+.product-A, 
+.product-B, 
+.product-C, 
+.product-D,
+.product-E, 
+.product-F{
+    transition: var(--transition);
+}
+.contain{ 
+    margin: 15px 5px;
+    background: white;
+    border: 3.5px solid var(--fourth-color);
+    border-radius: 10px;
+
+	align-content: center;
+	text-align: center;
+	transition: var(--transition);
+	box-shadow: 0px 0px 14px var(--shadowColor);
+	cursor: pointer;
+}
+.contain:hover{
+	border-color: rgb(77, 140, 87, 0.247);
+}
+.contain p{
+	cursor: pointer;
+	padding: 0 5px;
+}
+
+.holder{
+	overflow-y:hidden;
+    height: 10.5rem;
+    width: 10.5rem;
+	align-content: center;
+}
+.contain>div:nth-child(2){
+	width: 10.5rem;
+}
+
+.holder img, .contain .text{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 13px auto;
+}
+.holder span{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15.3px;
+    padding: 0 18px;
+    color:#505050;   
+}
+.holder{
+    align-content: center;
+}
+
+.price{
+	color: red;
+}
+
+
+/*******************  FOOTER SECTION ********************/
+
+footer{
+	background: url(https://www.arngren.net/JUL.header_bg.jpg);
+	background-position: bottom;
+	margin-left: 12.62rem;
+}
+.footer{
+	background: #1a2421cb/*#222831df*/;
+	padding: 50px;
+	width: 100%;
+	min-height: 100%;
+	color: var(--third-color);
+	flex-wrap: wrap;
+}
+.footer h4{
+	font-size: 32px;
+	margin: 5px 0;
+}
+.contact-list li{
+	margin: 4px 0;
+}
+.ads-partners{
+	margin-top: 20px;
+}
+.img-list{
+	flex-wrap: wrap;
+}
+.img-list li{
+	height: 60px;
+	margin: 5px;
+
+}
+.img-list li img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+@media screen and (max-width:51.07rem){
+ 
+	/************ ASIDE MOBILE SCREEN *****************/
+	aside{
+		position: relative;
+		width: 100vw;
+		height: auto;
+		min-height: 12.6rem;
+		text-align: center;
+		overflow-X: scroll;
+		overflow-y: hidden;
+		z-index: 2;
+		background-color: white;
+		margin: 0 auto;
+	}
+	aside::-webkit-scrollbar{
+		background: var(--second-color);
+		height: 4px;
+	}
+	aside::-webkit-scrollbar-thumb{
+		background: linear-gradient(var(--second-color),var(--first-color));
+		border-radius: 17px;
+	}
+	aside>div{
+		margin: 1rem;
+	}
+	
+	.item-list{
+		display: inline-flex;
+		margin-right: 2rem;
+	}
+
+	.item-list li{
+		border-radius: 8px;
+		min-width: 100px;
+		align-content: center;
+		padding: 8px;
+		margin: 0 5px;
+	}
+
+	header, main>div, footer{
+		margin-left: unset;
+	}
+}
