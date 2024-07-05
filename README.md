@@ -11,6 +11,10 @@
 
 ### 2. Task Level (Intermediate)
 * Responsive Design Upgrade.
+![Header](./Task%202%20-%20Responsive%20Design%20Upgrade/img/Screenshot%202024-07-05%20110753.png)
+![Product Shelf](./Task%202%20-%20Responsive%20Design%20Upgrade/img/Screenshot%202024-07-05%20110840.png)
+![Product Shelf Responsiveness](./Task%202%20-%20Responsive%20Design%20Upgrade/img/Screenshot%202024-07-05%20111139.png)
+![Enquiries](./Task%202%20-%20Responsive%20Design%20Upgrade/img/Screenshot%202024-07-05%20111040.png)
 
 ### 3. Task Level (Hard)
 * Full-stack development client project.
